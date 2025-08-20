@@ -115,11 +115,11 @@ pesos = {
     'desconocido': 1
 }
 
-codigo1 = leer_txt_como_string('codigo1.txt')
+codigo1 = leer_txt_como_string('src\lcs_detector\codigo1.txt')
 
 
 
-codigo2 = leer_txt_como_string('codigo2.txt')
+codigo2 = leer_txt_como_string('src\lcs_detector\codigo2.txt')
 
 
 
@@ -129,16 +129,16 @@ print(resultado)
 
 print("Codigo casi igual: ->")
 
-codigo1 = leer_txt_como_string('similitud1.txt')
+codigo1 = leer_txt_como_string('src\lcs_detector\similitud1.txt')
 
-codigo2 = leer_txt_como_string('similitud2.txt')
+codigo2 = leer_txt_como_string('src\lcs_detector\similitud2.txt')
 resultado = calcular_similitud_codigo(codigo1, codigo2, pesos)
 print(resultado)
 
 
 print("Codigo con poca similitud: ->")
-codigo1 = leer_txt_como_string('codigo1.txt')
-codigo2 = leer_txt_como_string('codigoDistinto.txt')
+codigo1 = leer_txt_como_string('src\lcs_detector\codigo1.txt')
+codigo2 = leer_txt_como_string('src\lcs_detector\codigoDistinto.txt')
 resultado = calcular_similitud_codigo(codigo1, codigo2, pesos)
 print(resultado)
 
